@@ -1,0 +1,108 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+body{
+    background-color: #F7ECDE;
+}
+
+h1{
+    font-size: 50px;
+    font-family: "Pacifico", cursive;
+    color: #352e28;
+    isolation: isolate;
+   
+}
+
+.title{
+    
+    position: relative;
+    width: 300px;
+}
+
+.title:hover .title::before{
+    height: 50px;
+}
+
+.title::before {
+    content: "";
+    position: absolute;
+    height: 25px;
+    width: 270px;
+    background-color: #FEC260;
+    top: 49%;
+    right: 15px;
+    
+
+}
+
+.submit button{
+    width: 150px;
+
+}
+
+.btn button{
+    width: 110px;
+}
+
+#light-box{
+    
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 999;
+}
+
+#light-box .main-box{
+    width: 500px;
+  
+    background-color: white;
+}
+
+#light-box .main-box .red{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: #F15F5D;
+}
+
+#light-box .main-box .yellow{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: #FEBE2E;
+}
+
+#light-box .main-box .green{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: #4DB748;
+}
+
+#light-box .caption h5{
+font-weight: 400;
+}
+
+#light-box .main-box .close{
+    right: 10px;
+    top: 10px;
+}
+
+#light-box .main-box .caption h5 i{
+    color: #BB4120;
+}
+
+.i1{
+    color: #3EA55B;
+}
+
+.i2{
+color: #B2AB49;
+}
+
+.caption h2{
+    color: #3EA55B;
+}
+
+
+

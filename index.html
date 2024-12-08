@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="./style/all.min.css">
+    <link rel="stylesheet" href="./style/bootstrap.min.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="">
+    
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="light-box" class="position-fixed d-none  top-0 end-0 start-0 bottom-0 d-flex justify-content-center align-items-center">
+        <div class="main-box position-relative">
+            <div class="close position-absolute ">
+                <i class="fa-solid fa-xmark close fs-3"></i>
+            </div>
+<div class="inner p-3">
+    
+    <div class="con d-flex ">
+        
+        <div class="red "></div>
+        <div class="yellow ms-2"></div>
+        <div class="green ms-2"></div>
+        
+       </div>
+       <h5 class="mt-4">Site Name or Url is not valid, Please follow the rules below :</h5>
+
+       <div class="caption">
+        <h5 class="pt-3"> <i class="fa-regular fa-circle-right p-2"></i> Site name must contain at least 3 characters</h5>
+        <h5 class="pt-3"> <i class="fa-regular fa-circle-right p-2"></i> Site URL must be a valid one</h5>
+
+       </div>
+</div>
+        </div>
+    </div>
+<div class="title text-center my-5 m-auto  bg-danger">
+    <h1>Bookmarker</h1>
+</div>
+
+
+<div class="caption text-center ">
+    <h2> <i class="i1 fa-solid fa-bookmark"></i> Bookmark your favorite sites <i class="i2 fa-solid fa-bookmark"></i> </h2>
+</div>
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="mb-3">
+                <label for="productName" class="form-label fw-bold"><i class="fa-solid fa-book-bookmark pe-2"></i> Site Name</label>
+                <input oninput="nameValidation()" type="text" class="form-control" id="productName" placeholder="Bookmark Name">
+                <div id="nameError" class="alert alert-danger mt-2 d-none">
+                    <span>The name cannot be more than 3 letters and</span>
+                    <span>The name cannot contain special character</span>
+                </div>
+                <div id="emptyError" class="alert alert-warning mt-2 d-none">Please Fill Your Name</div>
+              </div>
+            
+              <div class="mb-3">
+                <label for="productWebsite" class="form-label fw-bold"><i class="fa-solid fa-link pe-2"></i> Site URL</label>
+                <input oninput="webValidation()" type="email" class="form-control" id="productWebsite" placeholder="Website URL">
+              </div>
+              <div id="webError" class="alert alert-danger mt-2 d-none">
+                <span>The website name must start with (https:)</span>
+                
+            </div>
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="submit col-md-2 mt-4 m-auto">
+            <button id="addBtn" onclick="add()" type="button" class="btn btn-danger ">Submit</button>
+
+            
+            <button id="updateBtn" onclick="Update()" type="button" class="btn btn-warning d-none">Update</button>
+           
+        </div>
+        <h2 class="text-center mt-4 ">Search for Website Name</h2>
+       
+        <input oninput="search()" type="search" class="form-control" id="searchName" placeholder="Search for Website name">
+    </div>
+<div class=" w-75 d-flex flex-column mx-auto">
+    <div class="row mt-4">
+        <div class="col-md-2 text-center bg-white">
+            <h5>index</h5>
+        </div>
+        <div class="col-md-2 text-center bg-white">
+            <h5>Website Name</h5>
+        </div>
+        <div class="col-md-2 text-center bg-white">
+            <h5>Visit</h5>
+        </div>
+        <div class="col-md-2 text-center bg-white">
+            <h5> Delete</h5>
+        </div>
+        <div class="col-md-2 text-center bg-white">
+            <h5>Update</h5>
+        </div>
+        
+    </div>
+</div>
+
+    <div class="row " id="row">
+    
+    </div>
+
+</div>
+
+
+
+
+
+
+  
+
+<script src="./script/bootstrap.bundle.min.js"></script>
+<script src="./script/main.js"></script>
+</body>
+</html>
